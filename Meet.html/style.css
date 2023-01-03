@@ -1,0 +1,176 @@
+
+  *{
+    font-family:cursive;
+    color: antiquewhite;
+    margin:10px;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background: rgb(48, 48, 85);
+  }
+  h1{
+  background-color: rgba(151, 13, 231, 0.555);
+  border:groove rgb(0, 162, 255) 10px;
+  border-radius: 50px;
+  color:white;
+  text-align: center;
+  padding:20px;
+  }
+
+  a:link, a:visited {
+    background-color:rgba(8, 66, 160, 0.788);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    }
+    #links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+  }
+  
+  .links {
+    float: left;
+    z-index: 100;
+  }
+  
+  .links a {
+    display: block;
+    color: rgb(248, 248, 248);
+    text-align: center;
+    margin: 0px ;
+    text-decoration: none;
+  }
+  
+  .links a:hover {
+    transition-duration: 1s;
+    background-color:rgb(233, 233, 233);
+    color: rgb(0, 0, 0);
+  }
+  #sticky{
+    position: -webkist-sticky;
+    position: sticky;
+    top: 0;
+    left: 1200px;
+    z-index:3;
+    width: 100px;
+  }
+  #footer{
+    text-align: center;
+    padding-right: 100px;
+  }
+  ul#social li{
+    display: inline;
+    text-align: center;
+  }
+
+  #logo{
+    padding-left: 70px;
+    }
+    #slc{
+      padding-left:20px;
+    }
+
+    #pictures{
+      height: 350px;
+      background-color: rgba(0, 81, 255, 0.301);
+      z-index: -5;
+    }
+
+    #pictures2{
+      background-color: rgba(0, 81, 255, 0.301);
+      z-index: -5;
+    }
+    
+
+    .column {
+      float: left;
+      width: 30%;
+      padding: 5px;
+    }
+    
+      .Row::after {
+        content: "";
+      clear: both;
+      display: table;
+    }
+
+    /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  margin-right : 10px;
+  z-index: -10;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: rgb(102, 7, 156);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+#demo{
+  text-align: center;
+  color: purple;
+  background-color: black;
+
+}
+#demo1{
+  text-align: center;
+  color: purple;
+  background-color: black;
+
+}
+#demo2{
+  text-align: center;
+  color: purple;
+  background-color: black;
+
+}
+#demo3{
+  text-align: center;
+  color: purple;
+  background-color: black;
+
+}
+
+button{
+  color: black;
+}
