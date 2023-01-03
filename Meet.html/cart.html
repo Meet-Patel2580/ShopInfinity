@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart</title>
+<link rel="stylesheet" href="style.css">
+<style>
+button{
+    color: black;
+}
+input{
+    color: black;
+}
+#day{
+  font-size: 27px;
+}
+</style>
+
+<script src="cart.js"></script>
+</head>
+<body>
+    <h1>Cart</h1>
+    <img id="sticky" src="infinity logo.jpg" alt="logo">
+
+    <br>
+<ul id="links">
+  <li class="links">
+      <a href="index.html"> Home</a>
+  <li class="links">
+      <a href="clothes.html"> Clothes</a>
+  </li>
+  <li class="links">
+      <a href="outdoors.html"> outdoors</a>
+  </li>
+  <li class="links">
+    <a href="cars.html"> Cars</a>
+</li>
+<li class="links">
+  <a href="aboutUs.html"> About Us</a>
+</li>
+<li class="links">
+  <a href="electronics.html"> Electronics</a>
+</li>
+</ul>
+
+<br/>
+<div id="info">
+        <h3>Please Enter The Following Information Down Below</h3>
+        <hr/>
+        <form action="/action_page.php">
+        <p>First Name: 
+        <input type="text" name="firstName" id="firstName">
+        <input type ="button" onclick="Information1('firstName')" value = "Enter">
+        
+        <p>Last Name: <input type="text" name="lastName" id="lastName">
+        <input type ="button" onclick="Information2('lastName')" value = "Enter">
+        
+        <p>Phone Number: <input type="text" name="phoneNumber" id="phoneNumber">
+        <input type ="button" onclick="Information3('phoneNumber')" value = "Enter">
+        
+        <p>Adress: <input type="text" name="adress" id="adress">
+          <input type ="button" onclick="Information4('adress')" value = "Enter">
+          
+
+        <p>Credit Card Number: <input type="text" name="ccn" maxlength="16"></p>
+        <p>CVC: <input type="password" name="cvc" maxlength="3"></p>
+    </div>
+        </form>
+        <button type="button" onclick="alert('Your Information Has Been Recieved')">Submit Information</button></br>
+        <div style=" width:20%; float: left;"><fieldset>
+        <legend>Electronics</legend>
+        <form action="">
+        <h3>Pick your Electronic items:</h3>
+        <input type="checkbox" name="" id="XR" value="iphone XR">iphone XR<br />
+        <input type="checkbox" name="" id="XS" value="iphone xs/xs max">iphone xs/xs max<br />
+        <input type="checkbox" name="" id="S10" value="Samsung Galaxy S10/S10+">Samsung Galaxy S10/S10+<br />
+        <input type="checkbox" name="" id="LG" value="LG 4K smart TV" >LG 4K smart TV<br />
+        <input type="checkbox" name="" id="Sony" value="Sony Bravia HDR TV" >Sony Bravia HDR TV<br />
+        <input type="checkbox" name="" id="Samsung" value="Samsung OLED TV" >Samsung OLED TV<br />
+        <input type="checkbox" name="" id="Mac" value="Apple Mac">Apple Mac<br />
+        <input type="checkbox" name="" id="Macbook" value="Macbook Pro"> Macbook Pro<br />
+        <input type="checkbox" name="" id="Cyber" value="Cyber Power PC">Cyber Power PC<br />
+        </form>
+        <input type ="button" onclick="confirm()"value = "confirm items" ></button></fieldset>
+        </div>
+        </fieldset></div>
+        
+        <div style=" width:20%; float: left;"><fieldset>
+        <legend>Clothes</legend>
+        <form action="">
+        <h3>Pick your Clothes items:</h3>
+        <input type="checkbox" name="" id="a" value="Gucci t-shirt" >Gucci t-shirt<br />
+        <input type="checkbox" name="" id="b" value="Supreme t-shirt" >Supreme t-shirt<br />
+        <input type="checkbox" name="" id="c" value="George slim fit shirt" >George slim fit shirt<br />
+        <input type="checkbox" name="" id="d" value="Levi's Jeans" >Levi's Jeans<br />
+        <input type="checkbox" name="" id="e" value="Khakis" >Khakis<br />
+        <input type="checkbox" name="" id="f" value="Denim Shorts" > Denim Shorts<br />
+        <input type="checkbox" name="" id="g" value="Air Force 1 off white" >Air Force 1 off white<br />
+        <input type="checkbox" name="" id="h" value="White Nike shoes" >White Nike shoes<br />
+        <input type="checkbox" name="" id="i" value=" New Balance Kawhi Shoes" > New Balance Kawhi Shoes<br />
+        </form>
+        <input type ="button" onclick="clothes()"value = "confirm items" ></button></fieldset>
+        </div>
+        </fieldset></div>
+        
+
+
+
+
+        <div style=" width:20%; float: left;"><fieldset>
+        <legend>Cars</legend>
+        <form action="">
+        <h3>Pick your car:</h3>
+        <input type="checkbox" name="" id="c1">Toyota Corolla<br />
+        <input type="checkbox" name="" id="c2">Honda Civic<br />
+        <input type="checkbox" name="" id="c3" >VolksWagen Jetta<br />
+        <input type="checkbox" name="" id="c4">Toyota Rav4<br />
+        <input type="checkbox" name="" id="c5"> Honda CRV<br />
+        <input type="checkbox" name="" id="c6">VolksWagen Tiguan<br />
+        <input type="checkbox" name="" id="c7">Ford F150<br />
+        <input type="checkbox" name="" id="c8">Chevy Silverado<br />
+        <input type="checkbox" name="" id="c9">Toyota Tundra<br />
+        </form>
+        <input type ="button" onclick="cars()"value = "confirm items" ></button></fieldset>
+        </div>
+        </fieldset></div>
+        
+
+
+
+
+
+        <div style=" width:20%; float: left;"><fieldset>
+        <legend>Outdoors</legend>
+        <form action="">
+        <h3>Pick your outdoor items:</h3>
+        <input type="checkbox" name="size" id="o1" >Electric Bike<br />
+        <input type="checkbox" name="size" id="o2" >Blue Surly Bike<br />
+        <input type="checkbox" name="size" id="o3" >Wide Tire Green Bike<br />
+        <input type="checkbox" name="size" id="o4" > 100 foot hose<br />
+        <input type="checkbox" name="size" id="o5" >wagon<br />
+        <input type="checkbox" name="size" id="o6" >water sprinkler<br />
+        <input type="checkbox" name="size" id="o7" >Electric Lawn Mower<br />
+        <input type="checkbox" name="size" id="o8" >Gas lawn Mower<br />
+        <input type="checkbox" name="size" id="o9" >John Deere Lawn Mower<br />
+        </form>
+        <input type ="button" onclick="outdoors()"value = "confirm items" ></button></fieldset>
+        </div>
+        </fieldset></div>
+
+
+        <div style="width: 23%;"><fieldset>
+        <legend>Type of Payment</legend>
+        <form action="">
+        <h3>Pick Your method of Payment</h3>
+        <input type="radio" name="cone" id="21" value="MasterCard">MasterCard<br/>
+        <input type="radio" name="cone" id="22" value="Visa">Visa<br/>
+        <input type="radio" name="cone" id="23" value="PayPal">PayPal<br/>
+        <input type="radio" name="cone" id="24" value="Debit">Debit<br/>
+        <input type="radio" name="cone" id="25" value="Apple Pay">Apple Pay<br/>
+        <input type="reset" value="Clear">
+        </form>
+        
+        </fieldset></div>
+        <input type ="button" onclick="totalPrice()"value = "Order Now" ></button></fieldset></div>
+        <p>****************************************************************</p>
+        <div style="width: 40%; "><h3>Receipt:</h3>
+            <p>First Name: <span id = "FN" style="color:#DE5BA7"></span> <br/>
+                Last Name: <span id = "LN"  style="color:#DE5BA7"></span> <br/>
+                Phone Number: <span id = "PN"  style="color:#DE5BA7"></span> <br>
+                adress: <span id = "ad"  style="color:#DE5BA7"></span> <br>
+
+                Electronic items:
+                            <span id = "item1" style="color:#DE5BA7"></span>
+                            <span id = "item2" style="color:#DE5BA7"></span>
+                            <span id = "item3" style="color:#DE5BA7"></span>
+                            <span id = "item4" style="color:#DE5BA7"></span>
+                            <span id = "item5" style="color:#DE5BA7"></span>
+                            <span id = "item6" style="color:#DE5BA7"></span>
+                            <span id = "item7" style="color:#DE5BA7"></span>
+                            <span id = "item8" style="color:#DE5BA7"></span>
+                            <span id = "item9" style="color:#DE5BA7"></span>
+    </br>
+                Clothes items:
+                            <span id = "clothes1" style="color:#DE5BA7"></span>
+                            <span id = "clothes2" style="color:#DE5BA7"></span>
+                            <span id = "clothes3" style="color:#DE5BA7"></span>
+                            <span id = "clothes4" style="color:#DE5BA7"></span>
+                            <span id = "clothes5" style="color:#DE5BA7"></span>
+                            <span id = "clothes6" style="color:#DE5BA7"></span>
+                            <span id = "clothes7" style="color:#DE5BA7"></span>
+                            <span id = "clothes8" style="color:#DE5BA7"></span>
+                            <span id = "clothes9" style="color:#DE5BA7"></span>
+    <br>
+
+
+                Car:
+                            <span id = "car1" style="color:#DE5BA7"></span>
+                            <span id = "car2" style="color:#DE5BA7"></span>
+                            <span id = "car3" style="color:#DE5BA7"></span>
+                            <span id = "car4" style="color:#DE5BA7"></span>
+                            <span id = "car5" style="color:#DE5BA7"></span>
+                            <span id = "car6" style="color:#DE5BA7"></span>
+                            <span id = "car7" style="color:#DE5BA7"></span>
+                            <span id = "car8" style="color:#DE5BA7"></span>
+                            <span id = "car9" style="color:#DE5BA7"></span>
+    </br>
+              
+              Outdoor items: 
+              <span id = "out1" style="color:#DE5BA7"></span> 
+              <span id = "out2" style="color:#DE5BA7"></span> 
+              <span id = "out3" style="color:#DE5BA7"></span> 
+              <span id = "out4" style="color:#DE5BA7"></span> 
+              <span id = "out5" style="color:#DE5BA7"></span> 
+              <span id = "out6" style="color:#DE5BA7"></span> 
+              <span id = "out7" style="color:#DE5BA7"></span> 
+              <span id = "out8" style="color:#DE5BA7"></span> 
+              <span id = "out9" style="color:#DE5BA7"></span> <br>
+              
+                Total: <input type="text" name="" id="t" value=""></input></p></div>
+                <p>****************************************************************</p>
+                <br>
+                <button onclick="greetings()">Done</button>
+                <p id="day"></p>
+
+                
+<br>
+<br>
+<br>
+<br>
+<div id="footer">
+  <ul id="social">
+    <li><a href="http://www.facebook.com" target="_blank"><img src="facebook.png" width="100" height="100"/></a></li>
+    <li><a href="http://www.twitter.com" target="_blank"><img src="twitter.png"  width="100" height="100"/></a></li>
+    <li><a href="http://www.snapchat.com" target="_blank"><img src="snapchat.png" width="100" height="100"/></a></li>
+    <li><a href="http://www.instagram.com" target="_blank"><img src="instagram.png" width="100" height="100"/></a></li>
+  </ul>
+  <footer>
+    <p class="copyright">&copy;ShopInfiniti ALL RIGHTS RESERVED</p>
+  </footer>
+</div>
+</body>
+</html>

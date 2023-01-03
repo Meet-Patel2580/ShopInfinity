@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ShopInfiniti Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="slideShow.js"></script>
+<style>
+  *{
+    font-family:cursive;
+    color: antiquewhite;
+    margin:10px;
+    box-sizing: border-box;
+  }
+  
+  * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  background-color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 98%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+  body{
+    background: rgb(48, 48, 85);
+  }
+  h1{
+  background-color: rgba(151, 13, 231, 0.555);
+  border:groove rgb(0, 162, 255) 10px;
+  border-radius: 50px;
+  color:white;
+  text-align: center;
+  padding:20px;
+  }
+  #pictures{
+    background-color: rgba(0, 81, 255, 0.301);
+  }
+  .column {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+  .Row::after {
+    content: "";
+  clear: both;
+  display: table;
+}
+  #logo{
+padding-left: 70px;
+}
+#slc{
+  padding-left:20px;
+}
+
+  
+  #break{
+    color: blue;
+    border-style: solid; 
+  }
+
+  #About{
+    border: groove royalblue 15px;
+    border-left: dotted 15px;
+    border-right: dotted 15px;
+    background-color: rgba(117, 1, 250, 0.39);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+
+  a:link, a:visited {
+  background-color:rgba(8, 66, 160, 0.788);
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  }
+  #links{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+}
+
+.links {
+  float: left;
+}
+
+.links a {
+  display: block;
+  color: rgb(248, 248, 248);
+  text-align: center;
+  margin: 0px ;
+  text-decoration: none;
+}
+
+.links a:hover {
+  transition-duration: 1s;
+  background-color:rgb(233, 233, 233);
+  color: rgb(0, 0, 0);
+}
+
+
+h4{
+  text-align: center;
+  font-size: 20px;
+}
+.text2{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: ridge yellow;
+  border-radius: 40px;
+  float: left;
+  width: 30%;
+  background: rgba(8, 8, 235, 0.678);
+}
+
+#sticky{
+  position: -webkist-sticky;
+  position: sticky;
+  top: 0;
+  left: 1200px;
+  z-index:3;
+  width: 100px;
+}
+
+#slogan{
+  text-align: center;
+}
+h2{
+  text-align: center;
+  text-shadow: #008CBA;
+  
+}
+
+button{
+  color: purple;
+}
+#myInput{
+  color: purple;
+}
+</style>
+</head>
+<Body>
+ 
+  <img id="sticky" src="infinity logo.jpg" alt="logo">
+    <h1>
+      <big><u>ShopInfiniti</u></big>  
+    </h1>
+    
+    <br>
+<ul id="links">
+  <li class="links">
+      <a href="electronics.html"> Electronics</a>
+  </li>
+  <li class="links">
+      <a href="clothes.html"> Clothes</a>
+  </li>
+  <li class="links">
+      <a href="outdoors.html"> outdoors</a>
+  </li>
+  <li class="links">
+    <a href="cars.html"> Cars</a>
+</li>
+<li class="links">
+  <a href="aboutUs.html"> About Us</a>
+</li>
+<li class="links">
+  <a href="cart.html"> Cart</a>
+</li>
+</ul>
+<br>
+<br>
+
+
+<p>How is your mood bad, good, or great?.</p>
+
+
+<input id="myInput" type="text">
+
+<button onclick="myFunction()">Enter MOOD</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var text;
+  var fruits = document.getElementById("myInput").value;
+// answering system
+  switch(fruits.toUpperCase()) {
+    case "BAD":
+      text = "Sorry to hear. Head over to Google and search, bad mood remedies.";
+    break;
+    case "GOOD":
+    text = "There's not supposed to be a good because it's in the middle so what you have to do is go to Google and search, good mood remedies.";
+    break;
+    case "GREAT":
+    text = "You're doing great, by having a good mood so continue your day just the way it is.";
+    break;
+    default:
+    text = "Retype your mood (choose from bad, good or great)";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+    <hr id="break" class="hr"> 
+  <div id="pictures2" class="Row">
+    <div class="column">
+      <img src="o-ONLINE-SHOPPING-facebook.jpg" alt="online" width="400" height="200">
+    </div>
+    <div id="logo" class="column">
+      <img src="infinity logo.jpg" alt="logo" width="250" height="200">   
+    </div>
+    <div id="slc" class="column">
+      <img src="bank-reasons.png" alt="happy" width="400" height="200">
+    </div> 
+  </div>
+  <hr id="break">
+  
+  <br>
+  <h2>Welcome to ShopInfiniti!</h2>
+  <h2>Where value meets customer demands</h2>
+
+  <br>
+  <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="laptop.jpeg" style="width:100%">
+    <div class="text">Apple Laptop</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="bike.jpg" style="width:100%">
+    <div class="text">Bicycles</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="car.jpg" style="width:100%">
+    <div class="text"> Cars</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="clothes.jpg" style="width:100%">
+    <div class="text"> Clothes</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="phone.png" style="width:100%">
+    <div class="text"> Phones</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+  <div id="footer">
+    <ul id="social">
+      <li><a href="http://www.facebook.com" target="_blank"><img src="facebook.png" width="100" height="100"/></a></li>
+      <li><a href="http://www.twitter.com" target="_blank"><img src="twitter.png"  width="100" height="100"/></a></li>
+      <li><a href="http://www.snapchat.com" target="_blank"><img src="snapchat.png" width="100" height="100"/></a></li>
+      <li><a href="http://www.instagram.com" target="_blank"><img src="instagram.png" width="100" height="100"/></a></li>
+    </ul>
+    <footer>
+      <p class="copyright">&copy;ShopInfiniti ALL RIGHTS RESERVED</p>
+    </footer>
+  </div>
+  
+
+</body>
+</html>
